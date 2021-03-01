@@ -18,7 +18,7 @@ public class WeekOneExercisesPartOne {
         int numberOfPeople = 8;
         int numberOfEightSlicePizzas = 1;
 
-        int actualSlicesPerPerson = divideUpEightSlicePizzasEvenly(numberOfEightSlicePizzas, numberOfPeople);
+       int actualSlicesPerPerson = divideUpEightSlicePizzasEvenly(numberOfEightSlicePizzas, numberOfPeople);
 
         assertEquals(1, actualSlicesPerPerson);
     }
@@ -47,7 +47,7 @@ public class WeekOneExercisesPartOne {
     }
 
     private int divideUpEightSlicePizzasEvenly(int numberOfPizzas, int numberOfPeople) {
-        return 0;
+        return numberOfPizzas*8/numberOfPeople;
     }
 
     private int determineLeftoverSlicesOfPizza(int numberOfPizzas, int numberOfPeople) {
