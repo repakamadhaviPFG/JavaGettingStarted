@@ -22,7 +22,6 @@ public class WeekOneExercisesPartTwo {
     }
 
     @Test
-    @Disabled
     public void bloodAlcoholLevelForAFemale() {
         char gender = 'F';
         int weightInPounds = 135;
@@ -63,7 +62,13 @@ public class WeekOneExercisesPartTwo {
         float lastConsumptionInterval = 0;
 
         weightQuotient = (float) (5.14/weightInPounds);
-        peakAlcoholContent = (float) (weightQuotient*ouncesOfAlcoholConsumed*0.73);
+        if (gender == 'M')
+        {
+            peakAlcoholContent = (float) (weightQuotient*ouncesOfAlcoholConsumed*0.73);
+        } else
+        {
+            peakAlcoholContent = (float) (weightQuotient*ouncesOfAlcoholConsumed*0.66);
+        }
         lastConsumptionInterval = (float) (hoursSinceLastDrink*0.015);
         actualBAC = peakAlcoholContent - lastConsumptionInterval;
 
