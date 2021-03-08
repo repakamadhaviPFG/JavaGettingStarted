@@ -14,7 +14,12 @@ public class BowlingGame {
         //            This change should not break the existing tests that pass. This is called refactoring.
 
         // TODO RESPONSE: Why does the subscript need to start with zero?
-        score += rolls[0] + rolls[1];
+        for (int i = 0; i < 20; i++)
+        {
+            score += rolls[i];
+        }
+
+       /* score += rolls[0] + rolls[1];
         score += rolls[2] + rolls[3];
         score += rolls[4] + rolls[5];
         score += rolls[6] + rolls[7];
@@ -23,8 +28,8 @@ public class BowlingGame {
         score += rolls[12] + rolls[13];
         score += rolls[14] + rolls[15];
         score += rolls[16] + rolls[17];
-        score += rolls[18] + rolls[19];
-        return score;
+        score += rolls[18] + rolls[19];*/
+            return score;
     }
 
 }
