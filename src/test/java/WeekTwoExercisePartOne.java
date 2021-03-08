@@ -34,8 +34,9 @@ public class WeekTwoExercisePartOne {
     // TODO Response: Why would you never refactor if you had a failing test?
 
     @Test
-    @Disabled
+   // @Disabled
     // TODO Response: Why did we start with this test?
+    // I believe this one is a basic/easy scenario where all frames has a zero score
     public void whenRollingAllGutterBallsScoreIsZero() {
         rollMany(20, 0);
 
@@ -68,6 +69,7 @@ public class WeekTwoExercisePartOne {
 
         assertEquals(16, actual);
     }
+
 
     @Test
     @Disabled
