@@ -15,8 +15,9 @@ public class BowlingGame {
 
         // TODO RESPONSE: Why does the subscript need to start with zero?
         // Java uses a zero based index system and indexes will run from 0 to one less than the number of elements
-        for (int i = 0; i < 20; i++) {
-            if(i > 1)
+        for(int i = 0; i < 20; i++)
+        {
+            if(i > 1 )
             {
                 if((rolls[i-2]+rolls[i-1])==10)
                 {
@@ -27,10 +28,14 @@ public class BowlingGame {
                 }
             } else
             {
-                score += rolls[i];
+                if(rolls[i] == 10)
+                {
+                    score += rolls[i]+(rolls[i+1] + rolls[i+2]);
+                } else
+                {
+                    score += rolls[i];
+                }
             }
-
-
         }
        /* score += rolls[0] + rolls[1];
         score += rolls[2] + rolls[3];

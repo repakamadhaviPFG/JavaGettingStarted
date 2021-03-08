@@ -73,7 +73,7 @@ public class WeekTwoExercisePartOne {
 
 
     @Test
-    @Disabled
+    //@Disabled
     public void whenRollingStrikeFrameScoreIsTenPlusNextTwoRolls() {
         bowlingGame.roll(10);
         bowlingGame.roll(7);
@@ -86,6 +86,7 @@ public class WeekTwoExercisePartOne {
     }
 
     //TODO Response: Why don't we need any more tests than these?
+    //These test cases cover the possible scenarios in a bowling game
 
     private void rollMany(int rollCount, int pins) {
         for(int i = 0; i < rollCount; i++) {
