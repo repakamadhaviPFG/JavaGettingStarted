@@ -46,8 +46,9 @@ public class WeekTwoExercisePartOne {
     }
 
     @Test
-    @Disabled
+    //@Disabled
     // TODO Response:  If the above test works with open frames, why is this test necessary?
+    //in this game we have a simple score of 1 in each frame, easy score calculation
     public void whenRollingOpenFrameScoreIsSumOfRolls() {
         rollMany(20, 1);
 
